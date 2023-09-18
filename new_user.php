@@ -1,5 +1,6 @@
-<html>
+<html
 <head>
+<link rel="stylesheet" type="text/css" href="new_user.css">
 </head>
 <body>
 <form method="Post">
