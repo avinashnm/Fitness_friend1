@@ -13,14 +13,14 @@
 <input type="text" class="input" name="user_name" required title="Please enter your User Name">
 </br></br>
 <div class="dob_gender">
-<div class="dob_section">
-<label for="dob">DATE OF BIRTH</label>
-<input type="date" name="dob" class="input" required></br></br>
-</div>
-<div class="gender_section">
-<label for="gender">GENDER</label>
-<input type="text" name="gender" class="input" required>
-</div>
+    <div class="form-group">
+        <label for="dob">DATE OF BIRTH</label>
+        <input type="date" name="dob" class="input" required>
+    </div>
+    <div class="form-group">
+        <label for="gender">GENDER</label>
+        <input type="text" name="gender" class="input" required>
+    </div>
 </div>
 <label for="email_id">Email ID:</label>
 <input type="email" class="input" name="email_id"/></br></br>
@@ -28,7 +28,7 @@
 <input type="password" class="input" name="password"/></br></br>
 <label for="cnfrm_pw">Confirm Password:</label>
 <input type="password" class="input" name="cnfrm_pw"/></br></br>
-<button name="signup_btn" class="signup_btn">Sign Up</button></br></br>
+<button name="signup_btn" class="signup-button">Sign Up</button></br></br>
 <a href="sign_in.php">Already a user? Sign-in.</a>
 </div>
 </form>
