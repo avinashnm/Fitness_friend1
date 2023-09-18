@@ -1,5 +1,6 @@
 <html>
 <head>
+<link rel="stylesheet" type="text/css" href="sign_in.css">
 </head>
 <body>
 <form method="Post">
@@ -8,7 +9,7 @@
 <label for="password">Password:</label>
 <input type="password" name="password"/></br></br>
 <button name="signup_btn">Sign Up</button></br></br>
-<a href="new_user.php">New User? Sign-up.</a>
+<a href="/php_project/new_user.php">New User? Sign-up.</a>
 </form>
 </body>
 </html>
