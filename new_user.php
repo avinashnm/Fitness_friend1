@@ -28,7 +28,8 @@
 <input type="password" class="input" name="password"/></br></br>
 <label for="cnfrm_pw">Confirm Password:</label>
 <input type="password" class="input" name="cnfrm_pw"/></br></br>
-<button name="signup_btn" class="signup-button">Sign Up</button></br></br>
+<button name="signup_btn" class="signup-btn">Sign Up</button>
+</br></br>
 <a href="sign_in.php">Already a user? Sign-in.</a>
 </div>
 </form>
