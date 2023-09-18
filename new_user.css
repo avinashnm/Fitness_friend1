@@ -1,10 +1,10 @@
 .signup_hdn {
-    font-family: "Oswald", sans-serif; /* Use the Oswald font or a fallback font */
-    font-size: 32px; /* Adjust the font size as needed */
-    font-weight: bold; /* Make the font bold */
-    color: #007bff;   /* Change the text color to blue or your preferred color */
+    font-family: "Oswald", sans-serif; 
+    font-size: 32px; 
+    font-weight: bold; 
+    color: #007bff;   
     text-align: center;
-    margin-top: 10px; /* Adjust the top margin as needed */
+    margin-top: 10px; 
 }
 
 form {
@@ -14,10 +14,10 @@ form {
     background-color: #f0f0f0;
     border-radius: 5px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-    text-align: center;
+    
 }
 label {
-    display: block;
+    
     font-weight: bold;
     margin-bottom: 5px;
 }
@@ -29,6 +29,19 @@ label {
     padding: 5px;
     width: 100%;
 }
+.dob_gender {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    margin-bottom: 10px; 
+}
+.dob_section, .gender_section
+{
+    display: flex;
+    flex-direction: column;
+    margin : 10px;
+}
+
 .signup_btn
 {
     background-color: #007bff;
