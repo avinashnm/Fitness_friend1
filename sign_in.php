@@ -1,6 +1,9 @@
 <html>
 <head>
-<link rel="stylesheet" type="text/css" href="sign_in.css">
+    <link rel="stylesheet" type="text/css" href="sign_in.css">
+    <link rel="stylesheet" href="Bootstrap/CSS/bootstrap.min.css">
+    <script src="Bootstrap/JS/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
 <form method="Post">
