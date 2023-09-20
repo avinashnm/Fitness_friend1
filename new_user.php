@@ -14,11 +14,11 @@
             <label for="user_name">USER NAME:</label>
             <input type="text" class="input" name="user_name" required title="Please enter your User Name"><br><br>
             <div class="dob_gender">
-                <div class="form-group">
+                <div class="form-group dob-group">
                     <label for="dob">DATE OF BIRTH</label>
                     <input type="date" name="dob" class="input dob-input" required>
                 </div>
-                <div class="form-group">
+                <div class="form-group gender-group">
                     <label for="gender">GENDER</label>
                     <input type="text" name="gender" class="input gender-input" required>
                 </div>
@@ -35,3 +35,13 @@
     </div>
 </body>
 </html>
+<?php
+$Username="root";
+$ServerName="localhost";
+$Password="";
+$Dbname = "Fitness_Friend";
+
+$conn = mysqli_connect($ServerName, $Username, $Password, $Dbname);
+
+
+?>
