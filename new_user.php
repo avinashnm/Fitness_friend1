@@ -8,9 +8,10 @@
 </head>
 <body>
     <div></div>
+    <div class="signup_fullsection">
     <div class="signup_section">
-        <h1 class="signup_hdn">SIGN UP</h1>
         <form method="Post">
+          <h1 class="signup_hdn">SIGN UP</h1>
             <label for="user_name">USER NAME:</label>
             <input type="text" class="input" name="user_name" required title="Please enter your User Name"><br><br>
             <div class="dob_gender">
@@ -33,6 +34,7 @@
             <a href="sign_in.php">Already a user? Sign-in.</a>
         </form>
     </div>
+  </div>
 </body>
 </html>
 <?php
