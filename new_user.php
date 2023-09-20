@@ -8,21 +8,23 @@
 </head>
 <body>
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
-<div class="container-fluid">
-  <a class="navbar-brand" href="#">Navbar</a>
-  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-    <div class="navbar-nav">
-      <a class="nav-link active" aria-current="page" href="#">Home</a>
-      <a class="nav-link" href="#">Features</a>
-      <a class="nav-link" href="#">Pricing</a>
-      <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="logo1.png" alt="FitGen Logo" width="50" height="44">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link" aria-current="page" href="#">Home</a>
+          <a class="nav-link" href="#">Features</a>
+          <a class="nav-link" href="#">Pricing</a>
+          <a class="nav-link active" href="new_user.php">SIGN UP</a>
+        </div>
+      </div>
     </div>
-  </div>
-</div>
-</nav>
+  </nav>
     <div class="signup_fullsection">
     <div class="signup_section">
         <form method="Post" class="signup_form">
