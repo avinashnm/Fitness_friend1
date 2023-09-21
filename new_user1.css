@@ -1,7 +1,29 @@
 .entire-bg{
   background-color: Black;
 }
+.signup_carousel
+{
+  display : flex;
+  flex-direction: row;
+}
+.carouselExampleCaptions
+{
+  max-height: 80vh;
+  margin-bottom: 50px;
+}
+.carousel
+{
+  flex: 1;
+   max-width: none;
+   max-height: 80vh;
+   margin: 30px 20px 20px 0px;
+   height: 100%;
 
+}
+.carousel_caption
+{
+  margin-bottom: 300px;
+}
 .signup_hdn {
     font-family: "Oswald", sans-serif;
     font-size: 50px;
@@ -13,11 +35,13 @@
 .signup_fullsection
 {
   display: flex;
+  flex:1;
   flex-direction: row;
   justify-content: start;
   margin-left: 20px;
   margin-top: 30px;
   max-width: 60vw;
+  max-height: 80vh;
 }
 .signup_form {
     width: 60vw;
