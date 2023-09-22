@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" type="text/css" href="new_user1.css">
+    <link rel="stylesheet" type="text/css" href="new_user2.css">
     <link rel="stylesheet" href="Bootstrap/CSS/bootstrap.min.css">
     <script src="Bootstrap/JS/bootstrap.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -96,22 +96,22 @@
     <div class="carousel-item active">
       <img src="signup_carousel_img1.jpg" class="d-block w-100" alt="...">
       <div class="carousel-caption d-none d-md-block">
-        <h5>First slide label</h5>
-        <p>Some representative placeholder content for the first slide.</p>
+        <h5 class="carousal-title">Track Your Caloric Intake</h5>
+        <p class="carousel-caption-text">Effortlessly log your daily meals and monitor your calorie consumption to stay on top of your nutritional goals.</p>
       </div>
     </div>
     <div class="carousel-item">
       <img src="signup_carousel_img2.jpg" class="d-block w-100" alt="...">
       <div class="carousel-caption d-none d-md-block">
-        <h5>Second slide label</h5>
-        <p>Some representative placeholder content for the second slide.</p>
+        <h5 class="carousal-title">Personalized Meal Planning</h5>
+        <p class="carousel-caption-text">Create tailored meal plans that fit your calorie targets and dietary preferences for a healthier lifestyle.</p>
       </div>
     </div>
     <div class="carousel-item">
       <img src="signup_carousel_img3.jpg" class="d-block w-100" alt="...">
       <div class="carousel-caption d-none d-md-block">
-        <h5>Third slide label</h5>
-        <p>Some representative placeholder content for the third slide.</p>
+        <h5 class="carousal-title">Achieve Your Weight Goals</h5>
+        <p class="carousel-caption-text">Reach your desired weight and maintain it with our calorie tracking tools and expert nutritional guidance.</p>
       </div>
     </div>
   </div>

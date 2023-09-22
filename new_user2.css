@@ -1,50 +1,47 @@
-.entire-bg {
+.entire-bg{
   background-color: Black;
 }
-
-.signup_fullsection {
-  display: flex;
-  flex-direction: column; /* Change to column layout */
-  align-items: center; /* Center the content horizontally */
-  margin-top: 30px;
-  max-width: 60vw;
-  height: 80vh; /* Set a fixed height for the signup section */
-  overflow: hidden; /* Hide overflowing content in signup section */
+.signup_carousel
+{
+  display : flex;
+  flex-direction: row;
 }
-
-.signup_carousel {
-  display: flex;
-  flex-direction: column; /* Change to column layout */
-  align-items: center; /* Center the content horizontally */
-  max-height: 80vh; /* Set a fixed height for the carousel section */
-  overflow: hidden; /* Hide overflowing content in carousel section */
+.carouselExampleCaptions
+{
+  max-height: 80vh;
+  margin-bottom: 50px;
 }
-
-/* Rest of your CSS styles */
-
-.carouselExampleCaptions {
-  max-height: 100%; /* Ensure the carousel fills the fixed height */
-  margin-bottom: 0; /* Remove margin to fill the fixed height */
-}
-
-.carousel {
+.carousel
+{
   flex: 1;
-  max-width: none;
-  max-height: 100%; /* Ensure the carousel fills the fixed height */
-  margin: 20px 0; /* Adjust margin for spacing */
+   max-width: none;
+   max-height: 80vh;
+   margin: 30px 20px 20px 0px;
+   height: 100%;
+
+}
+/* Add a darker background to the title and caption */
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.7); /* Adjust the opacity (0.7) for your desired darkness */
+  padding: 10px; /* Add padding for better readability */
+  color: white; /* Set the text color to white for contrast */
 }
 
-.carousel-inner {
-  max-height: 100%; /* Ensure carousel content fills the fixed height */
+/* Style the title */
+.carousel-caption .carousel-title {
+  font-size: 24px; /* Adjust the font size */
+  font-weight: bold; /* Add bold font weight */
+  margin-bottom: 10px; /* Add spacing between title and caption */
 }
 
-.carousel_caption {
-  margin-bottom: 0; /* Remove margin to fill the fixed height */
+/* Style the caption */
+.carousel-caption .carousel-caption-text {
+  font-size: 18px; /* Adjust the font size */
 }
 
 .signup_hdn {
     font-family: "Oswald", sans-serif;
-    font-size: 500px;
+    font-size: 50px;
     font-weight: bold;
     color: Black;
     margin-top: 50px;
