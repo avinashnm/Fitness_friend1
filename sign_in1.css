@@ -1,4 +1,108 @@
-.body
+.entire-bg{
+  background-color: Black;
+}
+.signin_hdn {
+  font-family: "Oswald", sans-serif;
+  font-size: 30px; /* Smaller font size for the header */
+  font-weight: bold;
+  color: #333; /* Darker text color */
+  margin-top: 10px; /* Adjust margin */
+  margin-bottom: 20px;
+}
+.signin_fullsection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Center vertically as well */
+  width: 100vw;
+  background-color: #f8f9fa; /* Light background color */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  padding: 20px; /* Add some padding */
+}
+
+.signin_form {
+    max-width: 60vw;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+label {
+
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.input
 {
-background-color : Black;  
+    border: none;
+    border-bottom: 1px solid #ccc;
+    background: none;
+    padding: 5px;
+    width: 100%;
+}
+.dob_gender {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label,
+.form-group input {
+    margin: 5px;
+}
+.dob-group
+{
+margin-right: 20px;
+}
+
+.signin_btn {
+  background-color: Black;
+  color: white;
+  font-weight: bold;
+  border-radius: 10px;
+  padding: 5px 100px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+}
+.signin_btn:hover {
+  background-color: Grey;
+}
+.forgotpw_btn {
+  background-color: Black;
+  color: white;
+  font-weight: bold;
+  border-radius: 10px;
+  padding: 5px 65px;
+  background-color: White; /* Button background color */
+  color: Black; /* Button text color */
+  border: 1px solid #ccc;
+  border-radius: 30px;
+  cursor: pointer;
+}
+.forgotpw_btn:hover {
+  background-color: Grey;
+}
+
+.dob-input
+{
+margin-right: 10px;
+}
+.signup-btn:hover{
+    background-color: #0056b3;
+}
+a {
+    text-decoration: none;
+    color: #007bff;
+}
+a:hover {
+    text-decoration: underline;
+}
+.btn_si{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
