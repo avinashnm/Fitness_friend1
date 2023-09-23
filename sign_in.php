@@ -7,20 +7,27 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body class="entire-bg">
-  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <nav class="navbar sticky-top navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">
-        <img src="logo1.png" alt="FitGen Logo" width="50" height="44">
-      </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
         <div class="navbar-nav">
-          <a class="nav-link" aria-current="page" href="#">Home</a>
-          <a class="nav-link" href="#">Features</a>
-          <a class="nav-link" href="#">Pricing</a>
-          <a class="nav-link active" href="new_user.php">SIGN UP</a>
+          <ul class="nav nav-underline">
+  <li class="nav-item">
+    <a class="nav-link" aria-current="page" href="Home.php">Home</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="new_user.php">Sign up</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link active" href="sign_in.php">Sign in</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" aria-disabled="true">About</a>
+  </li>
+</ul>
         </div>
       </div>
     </div>

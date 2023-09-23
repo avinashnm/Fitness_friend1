@@ -110,9 +110,6 @@ margin-right: 20px;
 .forgotpw_btn:hover {
   background-color: #ccc;
 }
-.signup-btn:hover{
-    background-color: #0056b3;
-}
 .signup_link{
     text-decoration: none;
     color: #007bff;
