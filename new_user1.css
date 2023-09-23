@@ -125,3 +125,14 @@ a:hover {
   flex-direction: column;
   align-items: center;
 }
+.su_section {
+    display: flex;
+}
+
+.su_section p {
+    margin-right: 10px; /* Adjust the margin as needed */
+}
+.signin_link
+{
+  text-decoration : none;
+}

@@ -79,8 +79,9 @@
           <div class="btn_section">
             <button name="signup_btn" class="signup-btn">Sign Up</button><br><br>
           </div>
-          <div class="si_section">
-            <a href="sign_in.php">Already a user? Sign-in.</a>
+          <div class="su_section">
+            <p> Have an account already?  </p>
+            <a class="signin_link"  href="sign_in.php"></t>Log in</a>
           </div>
         </div>
           </div>
