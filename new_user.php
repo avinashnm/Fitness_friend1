@@ -84,43 +84,43 @@
             <a class="signin_link"  href="sign_in.php"></t>Log in</a>
           </div>
         </div>
-          </div>
         </form>
+        </div>
     </div>
     <div id="carouselExampleCaptions" class="carousel slide">
-  <div class="carousel-indicators">
+  <div class="carousel-indicators mb-0s">
     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
   </div>
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="signup_carousel_img1.jpg" class="d-block w-100" alt="...">
+      <img src="signup_carousel_img1.jpg" class="d-block w-100 img" alt="...">
       <div class="carousel-caption d-none d-md-block">
         <h5 class="carousal-title">Track Your Caloric Intake</h5>
         <p class="carousel-caption-text">Effortlessly log your daily meals and monitor your calorie consumption to stay on top of your nutritional goals.</p>
       </div>
     </div>
     <div class="carousel-item">
-      <img src="signup_carousel_img2.jpg" class="d-block w-100" alt="...">
+      <img src="signup_carousel_img2.jpg" class="d-block w-100 img" alt="...">
       <div class="carousel-caption d-none d-md-block">
         <h5 class="carousal-title">Personalized Meal Planning</h5>
         <p class="carousel-caption-text">Create tailored meal plans that fit your calorie targets and dietary preferences for a healthier lifestyle.</p>
       </div>
     </div>
     <div class="carousel-item">
-      <img src="signup_carousel_img3.jpg" class="d-block w-100" alt="...">
+      <img src="signup_carousel_img3.jpg" class="d-block w-100 img" alt="...">
       <div class="carousel-caption d-none d-md-block">
         <h5 class="carousal-title">Achieve Your Weight Goals</h5>
         <p class="carousel-caption-text">Reach your desired weight and maintain it with our calorie tracking tools and expert nutritional guidance.</p>
       </div>
     </div>
   </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+  <button class="carousel-control-prev carousel-control" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
     <span class="visually-hidden">Previous</span>
   </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+  <button class="carousel-control-next carousel-control" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="visually-hidden">Next</span>
   </button>

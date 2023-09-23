@@ -58,7 +58,7 @@ label {
 .input
 {
     border: none;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 4px solid #ccc;
     background: none;
     padding: 15px;
 }
