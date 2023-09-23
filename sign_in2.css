@@ -1,8 +1,10 @@
-.entire-bg{
-  background-color: Black;
+.logo_section
+{
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
 .signin_hdn {
-  font-family: "Oswald", sans-serif;
+  font-family: 'Helvetica Neue', sans-serif;
   font-size: 30px; /* Smaller font size for the header */
   font-weight: bold;
   color: #333; /* Darker text color */
@@ -15,29 +17,50 @@
   align-items: center;
   height: 100vh; /* Center vertically as well */
   width: 100vw;
-  background-color: #f8f9fa; /* Light background color */
+  background-color: rgba(0, 0, 0, 0.5); /* Light background color */
   border-radius: 10px; /* Rounded corners */
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
   padding: 20px; /* Add some padding */
 }
-
-.signin_form {
-    max-width: 60vw;
-    border-radius: 5px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+.signin_section
+{
+  background-color: White;
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  min-width: 40vw;
+  min-height: 75vh;
+}
+.hdn_logo
+{
+  min-width: 40vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.logo_section
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.un_section, .pw_section{
+  margin: 0px 120px;
 }
 label {
-
-    font-weight: bold;
-    margin-bottom: 5px;
+    margin-right: 20px;
+    color: #333333;
+    margin-bottom: 50px;
+}
+.label
+{
+  padding: 10px 50px;
 }
 .input
 {
     border: none;
     border-bottom: 1px solid #ccc;
     background: none;
-    padding: 5px;
-    width: 100%;
+    padding: 15px;
 }
 .dob_gender {
     display: flex;
@@ -52,6 +75,10 @@ label {
 .form-group label,
 .form-group input {
     margin: 5px;
+}
+.su_section
+{
+  display: flex;
 }
 .dob-group
 {
@@ -72,11 +99,8 @@ margin-right: 20px;
   background-color: Grey;
 }
 .forgotpw_btn {
-  background-color: Black;
-  color: white;
   font-weight: bold;
-  border-radius: 10px;
-  padding: 5px 65px;
+  padding: 5px 60px;
   background-color: White; /* Button background color */
   color: Black; /* Button text color */
   border: 1px solid #ccc;
@@ -84,22 +108,24 @@ margin-right: 20px;
   cursor: pointer;
 }
 .forgotpw_btn:hover {
-  background-color: Grey;
-}
-
-.dob-input
-{
-margin-right: 10px;
+  background-color: #ccc;
 }
 .signup-btn:hover{
     background-color: #0056b3;
 }
-a {
+.signup_link{
     text-decoration: none;
     color: #007bff;
 }
-a:hover {
+.signup_link:hover {
     text-decoration: underline;
+}
+.su_section {
+    display: flex;
+}
+
+.su_section p {
+    margin-right: 10px; /* Adjust the margin as needed */
 }
 .btn_si{
   display: flex;

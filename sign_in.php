@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" type="text/css" href="sign_in1.css">
+    <link rel="stylesheet" type="text/css" href="sign_in2.css">
     <link rel="stylesheet" href="Bootstrap/CSS/bootstrap.min.css">
     <script src="Bootstrap/JS/bootstrap.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -27,35 +27,42 @@
   </nav>
     <div class="signin_fullsection">
     <div class="signin_section">
+      <div class="hdn_logo">
         <form method="Post" class="signin_form">
-          <div class="hdn_section">
-          <h1 class="signin_hdn">SIGN IN</h1>
+          <div class="logo_section">
+          <img src="logo1.png" alt="FitGen Logo" width="80" height="74">
         </div>
+          <div class="hdn_section">
+          <h1 class="signin_hdn">Sign in to Fit Gen</h1>
+        </div>
+      </div>
         <div class="un_section">
           <div class="form-floating mb-3">
-            <input type="text" class="form-control border-0 border-bottom" id="floatingUsername" placeholder="Enter your Username">
-            <label for="floatingUsername">Username</label>
+            <input type="text" class="form-control border-0 border-bottom col-12 input" id="floatingUsername" placeholder="Enter your Username" style="width: 100%;">
+            <label for="floatingUsername label">Username</label>
         </div>
           </div>
           <div class="pw_section">
             <div class="form-floating mb-3">
-              <input type="password" class="form-control" id="floatingPw" placeholder="Enter your Password">
-              <label for="floatingPw">Password</label>
+              <input type="password" class="form-control input" id="floatingPw" placeholder="Enter your Password">
+              <label for="floatingPw label">Password</label>
           </div>
           </div>
           <div class="btn_si">
           <div class="btn_section">
             <button name="signin_btn" class="signin_btn">Sign In</button><br><br>
             <div class="btn_section">
-              <button name="forgotpw_btn" class="forgotpw_btn">Forgot Password</button><br><br>
+              <button name="forgotpw_btn" class="forgotpw_btn">Forgot password?</button><br><br>
           </div>
           <div class="su_section">
-            <a href="new_user.php">New User? Sign-up.</a>
+            <p> Don't have an account?  </p>
+            <a class="signup_link"  href="new_user.php"></t>Sign-up</a>
           </div>
         </div>
           </div>
         </form>
     </div>
+  </div>
 </body>
 </html>
 <?php
