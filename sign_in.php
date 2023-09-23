@@ -16,13 +16,13 @@
         <div class="navbar-nav">
           <ul class="nav nav-underline">
   <li class="nav-item">
-    <a class="nav-link" aria-current="page" href="Home.php">Home</a>
+    <a class="nav-link"  href="Home.php">Home</a>
   </li>
   <li class="nav-item">
     <a class="nav-link" href="new_user.php">Sign up</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link active" href="sign_in.php">Sign in</a>
+    <a class="nav-link active" aria-current="page" href="sign_in.php">Sign in</a>
   </li>
   <li class="nav-item">
     <a class="nav-link" aria-disabled="true">About</a>
