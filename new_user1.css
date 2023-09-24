@@ -84,6 +84,11 @@ label {
     justify-content: space-between;
     margin-bottom: 10px;
 }
+.weight_height {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
 .form-group {
     display: flex;
     flex-direction: column;
@@ -106,6 +111,18 @@ margin-right: 20px;
     border-radius: 4px;
     cursor: pointer;
 
+}
+.activity-group
+{
+  margin-bottom: 15px;
+}
+.goals-group
+{
+  margin-bottom: 15px;
+}
+.height-group
+{
+  margin-right: 5px;
 }
 .dob-input
 {
