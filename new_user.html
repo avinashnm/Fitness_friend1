@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="new_user.js"></script>
-  <link rel="stylesheet" type="text/css" href="new_user.css">
-  <link rel="stylesheet" href="Bootstrap/CSS/bootstrap.min.css">
-  <script src="Bootstrap/JS/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="new_user.css">
+    <link rel="stylesheet" href="Bootstrap/CSS/bootstrap.min.css">
+    <script src="Bootstrap/JS/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
-
 <body class="entire-bg">
   <nav class="navbar sticky-top navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
@@ -42,7 +40,6 @@
     <div class="signup_section">
       <div class="step" id="step-1">
         <form method="post" action="new_user.php" class="signup_form">
-          <input type="hidden" name="step" id="step" value="1">
           <div class="hdn_section">
           <h1 class="signup_hdn">SIGN UP</h1>
         </div>
@@ -110,19 +107,16 @@
             </div>
           <div class="btn_si">
           <div class="btn_section">
-            <button type="button" class="signup-btn" onclick="nextStep()">Next</button>
+            <button id="nextButton1" name="next-btn" type="button" class="signup-btn" onclick="nextStep(1)">Next</button><br><br>
           </div>
           <div class="su_section">
             <p> Have an account already?  </p>
             <a class="signin_link"  href="sign_in.php"></t>Log in</a>
           </div>
         </div>
-        <input type="hidden" name="step" value="1">
         </form>
       </div>
-      </div>
       <div class="step" id="step-2" style="display: none;">
-        <div class="step" id="step-2" style="display: none;">
         <form method="post" action="new_user.php" class="signup_form">
           <div class="hdn_section">
           <h1 class="signup_hdn hdn1">SIGN UP</h1>
@@ -153,19 +147,15 @@
           </div>
           <div class="btn_si">
                             <div class="btn_section btn_section2">
-                              <button type="button" class="signup-btn" onclick="prevStep()">Previous</button>
-                              <button type="submit" name="submit_btn" class="signup-btn sub_btn">Submit</button>
-
+                                <button id="prevButton" type="button" class="signup-btn" onclick="prevStep(2)">Previous</button>
+                                <button name="submit_btn" id="submitButton" type="submit" class="signup-btn sub_btn">Submit</button>
                             </div>
                             <div class="su_section su_section2">
                                 <p> Have an account already? </p>
                                 <a class="signin_link" href="sign_in.php">Log in</a>
                             </div>
                         </div>
-                        <input type="hidden" name="step" value="2">
-
         </form>
-      </div>
       </div>
         </div>
     </div>
@@ -208,5 +198,19 @@
   </button>
 </div>
 </div>
+<script>
+        function nextStep(step) {
+            document.getElementById(`step-${step}`).style.display = "none";
+            step += 1;
+            document.getElementById(`step-${step}`).style.display = "block";
+        }
+
+        function prevStep(step) {
+            document.getElementById(`step-${step}`).style.display = "none";
+            step -= 1;
+            document.getElementById(`step-${step}`).style.display = "block";
+        }
+
+</script>
 </body>
 </html>
