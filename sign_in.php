@@ -19,7 +19,7 @@
     <a class="nav-link"  href="Home.php">Home</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="new_user.php">Sign up</a>
+    <a class="nav-link" href="new_user1.php">Sign up</a>
   </li>
   <li class="nav-item">
     <a class="nav-link active" aria-current="page" href="sign_in.php">Sign in</a>
@@ -63,7 +63,7 @@
           </div>
           <div class="su_section">
             <p> Don't have an account?  </p>
-            <a class="signup_link"  href="new_user.php"></t>Sign-up</a>
+            <a class="signup_link"  href="new_user1.php"></t>Sign-up</a>
           </div>
         </div>
           </div>
