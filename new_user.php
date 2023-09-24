@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="new_user.css">
+    <link rel="stylesheet" href="Bootstrap/CSS/bootstrap.min.css">
+    <script src="Bootstrap/JS/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body class="entire-bg">
+  <nav class="navbar sticky-top navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="logo1.png" alt="FitGen Logo" width="50" height="44">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <ul class="nav nav-underline">
+  <li class="nav-item">
+    <a class="nav-link"  href="Home.php">Home</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link active" aria-current="page" href="new_user1.php">Sign up</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="sign_in.php">Sign in</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" aria-disabled="true">About</a>
+  </li>
+</ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div class="signup_carousel">
+    <div class="signup_fullsection">
+    <div class="signup_section">
+      <div class="step" id="step-1">
+        <form method="Post" class="signup_form">
+          <div class="hdn_section">
+          <h1 class="signup_hdn">SIGN UP</h1>
+        </div>
+        <div class="un_section">
+          <div class="form-floating mb-3">
+            <input type="text" class="form-control border-0 border-bottom" id="floatingUsername" placeholder="Enter your Username">
+            <label for="floatingUsername">Full Name:</label>
+        </div>
+          </div>
+            <div class="dob_gender">
+                <div class="form-group dob-group">
+                  <div class="form-floating mb-3">
+                    <input type="date" class="form-control" id="floatingDOB" placeholder="Enter your DOB">
+                    <label for="floatingDOB">Date Of Birth</label>
+                </div>
+                </div>
+                <div class="form-group gender-group">
+                  <div class="form-floating">
+                      <select class="form-select" id="floatingSelectGender" aria-label="Floating label select example">
+                        <option selected>Select your Gender</option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                        <option value="Other">Other</option>
+                      </select>
+                      <label for="floatingSelectGender">Gender</label>
+                      </div>
+                </div>
+            </div>
+            <div class="weight_height">
+                <div class="form-group weight-group">
+                  <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="floatingWeight" placeholder="Enter your Weight">
+                    <label for="floatingWeight">Weight (in kgs):</label>
+                </div>
+                </div>
+                <div class="form-group height-group">
+                  <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="floatingHeight" placeholder="Enter your Height">
+                    <label for="floatingHeight">Height (in cm):</label>
+                </div>
+                </div>
+            </div>
+            <div class="form-group activity-group">
+              <div class="form-floating">
+                  <select class="form-select activity-level" id="floatingSelectActivity" aria-label="Floating label select example">
+                    <option selected>Select your Activity Level</option>
+                    <option value="Sedentary">Sedentary</option>
+                    <option value="Lightly Active">Lightly Active</option>
+                    <option value="Moderately Active">Moderately Active</option>
+                    <option value="Very Active">Very Active</option>
+                  </select>
+                  <label for="floatingSelectActivity" class="ac_label">Activity Level: </label>
+                  </div>
+            </div>
+            <div class="form-group goals-group">
+              <div class="form-floating">
+                  <select class="form-select fitness-goals" id="floatingSelectGoal" aria-label="Floating label select example">
+                    <option selected>Choose your Fitness Goal</option>
+                    <option value="Weight Loss">Weight Loss</option>
+                    <option value="Maintain">Maintain</option>
+                    <option value="Weight Gain">Weight Gain</option>
+                  </select>
+                  <label for="floatingSelectGoal" class="goals_label">Fitness Goal: </label>
+                  </div>
+            </div>
+          <div class="btn_si">
+          <div class="btn_section">
+            <button id="nextButton1" name="signup_btn" type="button" class="signup-btn" onclick="nextStep(1)">Next</button><br><br>
+          </div>
+          <div class="su_section">
+            <p> Have an account already?  </p>
+            <a class="signin_link"  href="sign_in.php"></t>Log in</a>
+          </div>
+        </div>
+        </form>
+      </div>
+      <div class="step" id="step-2" style="display: none;">
+        <form method="Post" class="signup_form">
+          <div class="hdn_section">
+          <h1 class="signup_hdn hdn1">SIGN UP</h1>
+        </div>
+        <div class="un_section">
+          <div class="form-floating mb-3">
+            <input type="text" class="form-control border-0 border-bottom" id="floatingUsername2" placeholder="Enter your Username">
+            <label for="floatingUsername2">Username</label>
+        </div>
+          </div>
+            <div class="mail_section">
+              <div class="form-floating mb-3">
+                <input type="email" class="form-control" id="floatingMail" placeholder="example@gmail.com">
+                <label for="floatingMail">Email address </label>
+            </div>
+          </div>
+          <div class="pw_section">
+            <div class="form-floating mb-3">
+              <input type="password" class="form-control" id="floatingPw" placeholder="Enter your Password">
+              <label for="floatingPw">Password</label>
+          </div>
+          </div>
+          <div class="cpw_section">
+            <div class="form-floating mb-3">
+              <input type="password" class="form-control" id="floatingCPw" placeholder="Re-enter your Password">
+              <label for="floatingCPw">Confirm Password</label>
+          </div>
+          </div>
+          <div class="btn_si">
+                            <div class="btn_section btn_section2">
+                                <button id="prevButton" type="button" class="signup-btn" onclick="prevStep(2)">Previous</button>
+                                <a href="Welcome.php"><button id="submitButton" type="button" class="signup-btn sub_btn" onclick="submitForm()">Submit</button></a>
+                            </div>
+                            <div class="su_section su_section2">
+                                <p> Have an account already? </p>
+                                <a class="signin_link" href="sign_in.php">Log in</a>
+                            </div>
+                        </div>
+        </form>
+      </div>
+        </div>
+    </div>
+    <div id="carouselExampleCaptions" class="carousel slide">
+  <div class="carousel-indicators mb-0s">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="signup_carousel_img1.jpg" class="d-block w-100 img" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5 class="carousal-title">Track Your Caloric Intake</h5>
+        <p class="carousel-caption-text">Effortlessly log your daily meals and monitor your calorie consumption to stay on top of your nutritional goals.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="signup_carousel_img2.jpg" class="d-block w-100 img" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5 class="carousal-title">Personalized Meal Planning</h5>
+        <p class="carousel-caption-text">Create tailored meal plans that fit your calorie targets and dietary preferences for a healthier lifestyle.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="signup_carousel_img3.jpg" class="d-block w-100 img" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5 class="carousal-title">Achieve Your Weight Goals</h5>
+        <p class="carousel-caption-text">Reach your desired weight and maintain it with our calorie tracking tools and expert nutritional guidance.</p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev carousel-control" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next carousel-control" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+</div>
+<script>
+        function nextStep(step) {
+            document.getElementById(`step-${step}`).style.display = "none";
+            step += 1;
+            document.getElementById(`step-${step}`).style.display = "block";
+        }
+
+        function prevStep(step) {
+            document.getElementById(`step-${step}`).style.display = "none";
+            step -= 1;
+            document.getElementById(`step-${step}`).style.display = "block";
+        }
+
+        function submitForm() {
+            // Add your form submission logic here
+            alert("Form submitted!");
+            // You can also use AJAX to submit the form data to the server
+        }
+</script>
+</body>
+</html>

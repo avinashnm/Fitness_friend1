@@ -18,7 +18,7 @@
     <a class="nav-link active" aria-current="page" href="Home.php">Home</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="new_user1.php">Sign up</a>
+    <a class="nav-link" href="new_user.php">Sign up</a>
   </li>
   <li class="nav-item">
     <a class="nav-link" href="sign_in.php">Sign in</a>
@@ -43,7 +43,7 @@
 <p class="sub-title">Join today.</p>
 </div>
 <div class="cabtn_section">
-<a href="new_user1.php"><button class="ca_btn">Create account</button></a>
+<a href="new_user.php"><button class="ca_btn">Create account</button></a>
 </div>
 </br></br>
 <div class="separator">
