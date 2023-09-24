@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link rel="stylesheet" type="text/css" href="new_user.css">
     <link rel="stylesheet" href="Bootstrap/CSS/bootstrap.min.css">
     <script src="Bootstrap/JS/bootstrap.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body class="entire-bg">
   <nav class="navbar sticky-top navbar-expand-lg bg-body-tertiary">
@@ -96,7 +96,7 @@
             </div>
             <div class="form-group goals-group">
               <div name="fitness_goal" class="form-floating">
-                  <select class="form-select fitness-goals" id="floatingSelectGoal" aria-label="Floating label select example">
+                  <select name="fitness_goal" class="form-select fitness-goals" id="floatingSelectGoal" aria-label="Floating label select example">
                     <option selected>Choose your Fitness Goal</option>
                     <option value="Weight Loss">Weight Loss</option>
                     <option value="Maintain">Maintain</option>
@@ -105,56 +105,39 @@
                   <label for="floatingSelectGoal" class="goals_label">Fitness Goal: </label>
                   </div>
             </div>
+          <div class="un_section">
+            <div class="form-floating mb-3">
+              <input name="username" type="text" class="form-control border-0 border-bottom" id="floatingUsername2" placeholder="Enter your Username">
+              <label for="floatingUsername2">Username</label>
+          </div>
+            </div>
+              <div class="mail_section">
+                <div class="form-floating mb-3">
+                  <input  name="email" type="email" class="form-control" id="floatingMail" placeholder="example@gmail.com">
+                  <label for="floatingMail">Email address </label>
+              </div>
+            </div>
+            <div class="pw_section">
+              <div class="form-floating mb-3">
+                <input name="password" type="password" class="form-control" id="floatingPw" placeholder="Enter your Password">
+                <label for="floatingPw">Password</label>
+            </div>
+            </div>
+            <div class="cpw_section">
+              <div class="form-floating mb-3">
+                <input name="confirm_password" type="password" class="form-control" id="floatingCPw" placeholder="Re-enter your Password">
+                <label for="floatingCPw">Confirm Password</label>
+            </div>
+          </div>
           <div class="btn_si">
           <div class="btn_section">
-            <button id="nextButton1" name="next-btn" type="button" class="signup-btn" onclick="nextStep(1)">Next</button><br><br>
+            <button id="sub-btn" name="submit-btn" type="submit" class="signup-btn" >Submit</button><br><br>
           </div>
           <div class="su_section">
             <p> Have an account already?  </p>
             <a class="signin_link"  href="sign_in.php"></t>Log in</a>
           </div>
         </div>
-        </form>
-      </div>
-      <div class="step" id="step-2" style="display: none;">
-        <form method="post" action="new_user.php" class="signup_form">
-          <div class="hdn_section">
-          <h1 class="signup_hdn hdn1">SIGN UP</h1>
-        </div>
-        <div class="un_section">
-          <div class="form-floating mb-3">
-            <input name="username" type="text" class="form-control border-0 border-bottom" id="floatingUsername2" placeholder="Enter your Username">
-            <label for="floatingUsername2">Username</label>
-        </div>
-          </div>
-            <div class="mail_section">
-              <div class="form-floating mb-3">
-                <input  name="email" type="email" class="form-control" id="floatingMail" placeholder="example@gmail.com">
-                <label for="floatingMail">Email address </label>
-            </div>
-          </div>
-          <div class="pw_section">
-            <div class="form-floating mb-3">
-              <input name="password" type="password" class="form-control" id="floatingPw" placeholder="Enter your Password">
-              <label for="floatingPw">Password</label>
-          </div>
-          </div>
-          <div class="cpw_section">
-            <div class="form-floating mb-3">
-              <input name="confirm_password" type="password" class="form-control" id="floatingCPw" placeholder="Re-enter your Password">
-              <label for="floatingCPw">Confirm Password</label>
-          </div>
-          </div>
-          <div class="btn_si">
-                            <div class="btn_section btn_section2">
-                                <button id="prevButton" type="button" class="signup-btn" onclick="prevStep(2)">Previous</button>
-                                <button name="submit_btn" id="submitButton" type="submit" class="signup-btn sub_btn">Submit</button>
-                            </div>
-                            <div class="su_section su_section2">
-                                <p> Have an account already? </p>
-                                <a class="signin_link" href="sign_in.php">Log in</a>
-                            </div>
-                        </div>
         </form>
       </div>
         </div>
@@ -198,19 +181,5 @@
   </button>
 </div>
 </div>
-<script>
-        function nextStep(step) {
-            document.getElementById(`step-${step}`).style.display = "none";
-            step += 1;
-            document.getElementById(`step-${step}`).style.display = "block";
-        }
-
-        function prevStep(step) {
-            document.getElementById(`step-${step}`).style.display = "none";
-            step -= 1;
-            document.getElementById(`step-${step}`).style.display = "block";
-        }
-
-</script>
 </body>
 </html>

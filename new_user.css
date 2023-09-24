@@ -64,6 +64,7 @@
 background-color: Black;
 }
 .signup_form {
+  overflow-y: scroll;
     width: 60vw;
     height: 90vh;
     padding: 10px 200px 50px 200px;
