@@ -1,0 +1,92 @@
+.img-container
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  min-width: 50vw;
+  padding-left: 50px;
+  background-color: Black;
+}
+.card-container
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+  min-width: 50vw;
+  margin-left: 80px;
+  font-family: 'Helvetica Neue', sans-serif;
+  background-color: Black;
+  color: White;
+  margin-left: 0;
+}
+.img_card
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.img{
+  width: 600px;
+  height: 540px;
+  margin-top: 200px;
+}
+.logo{
+ width: 150px;
+ height: 144px;
+}
+.logo-container{
+position: absolute;
+}
+.hdn1-container
+{
+  position: absolute;
+  margin-left: 115px;
+  margin-top: 70px;
+}
+.logo_hdn1
+{
+  display: flex;
+  padding-bottom: 150px;
+}
+
+.hdn-section
+{
+display: flex;
+flex-direction: column;
+justify-content: center;
+}
+.hdn1{
+  font-size: 65px;
+}
+.hdn2
+{
+  font-size: 135px;
+  font-weight: Bold;
+}
+.sub-hdn{
+font-size: 20px;
+}
+.desc-section
+{
+  font-size: 12px;
+  color: #ccc;
+}
+.gs-btn {
+    background-color: transparent; /* Transparent background */
+    color: white; /* Text color */
+    border: 2px solid white; /* White border */
+    font-weight: bold;
+    padding: 5px 100px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+/* Change button text color on hover */
+.gs-btn:hover {
+    color: black; /* Text color on hover */
+    background-color: white; /* Background color on hover */
+}

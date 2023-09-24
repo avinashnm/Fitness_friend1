@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" type="text/css" href="new_user1.css">
+    <link rel="stylesheet" type="text/css" href="new_user.css">
     <link rel="stylesheet" href="Bootstrap/CSS/bootstrap.min.css">
     <script src="Bootstrap/JS/bootstrap.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -87,7 +87,7 @@
           </div>
           <div class="btn_si">
           <div class="btn_section">
-            <button name="signup_btn" class="signup-btn">Sign Up</button><br><br>
+            <a href="Welcome.php"><button name="signup_btn" type="button" class="signup-btn">Sign Up</button></a><br><br>
           </div>
           <div class="su_section">
             <p> Have an account already?  </p>

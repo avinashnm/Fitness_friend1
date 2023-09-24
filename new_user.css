@@ -1,31 +1,74 @@
+.entire-bg{
+  background-color: Black;
+}
+.signup_carousel
+{
+  display : flex;
+  flex-direction: row;
+}
+.carouselExampleCaptions
+{
+  max-height: 80vh;
+  margin-bottom: 50px;
+}
+.carousel
+{
+  flex: 1;
+   max-width: none;
+   max-height: 100vh;
+   margin: 30px 20px 20px 0px;
+   height: 90vh;
+
+}
+/* Add a darker background to the title and caption */
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.7); /* Adjust the opacity (0.7) for your desired darkness */
+  padding: 10px; /* Add padding for better readability */
+  color: white; /* Set the text color to white for contrast */
+}
+
+/* Style the title */
+.carousel-caption .carousel-title {
+  font-size: 24px; /* Adjust the font size */
+  font-weight: bold; /* Add bold font weight */
+  margin-bottom: 10px; /* Add spacing between title and caption */
+}
+
+/* Style the caption */
+.carousel-caption .carousel-caption-text {
+  font-size: 18px; /* Adjust the font size */
+}
+
 .signup_hdn {
     font-family: "Oswald", sans-serif;
-    font-size: 320px;
+    font-size: 50px;
     font-weight: bold;
-    color: #007bff;
-    text-align: center;
-    margin-top: 10px;
+    color: Black;
+    margin-top: 50px;
+    margin-bottom: 20px;
 }
 .signup_fullsection
 {
   display: flex;
+  flex:1;
   flex-direction: row;
   justify-content: start;
   margin-left: 20px;
   margin-top: 30px;
-  max-width: 50vw;
+  max-width: 60vw;
+  max-height: 100vh;
+background-color: Black;
 }
 .signup_form {
-    width: 700px;
-    padding: 20px;
-    background-color: #f0f0f0;
-    border-radius: 5px;
+    width: 60vw;
+    height: 90vh;
+    padding: 10px 200px 50px 200px;
+    border-radius: 15px 0px 0px 15px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-    background: linear-gradient(to bottom, #66cc99, #44aa90);
+    background: linear-gradient(45deg, #2af598, #009efd);
 }
 label {
-
-    font-weight: bold;
+    color: #33333;
     margin-bottom: 5px;
 }
 .input
@@ -78,3 +121,32 @@ a {
 a:hover {
     text-decoration: underline;
 }
+.btn_si{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.su_section {
+    display: flex;
+}
+
+.su_section p {
+    margin-right: 10px; /* Adjust the margin as needed */
+}
+.signin_link
+{
+  text-decoration : none;
+}
+.img
+{
+  max-height: 90vh;
+  margin-bottom: 20px;
+  border-radius: 0px 15px 15px 0px;
+}
+/* ... (Your existing CSS code) ... */
+
+.carousel-control {
+  padding-top: 100px; /* Adjust the top padding as needed */
+}
+
+/* ... (Your existing CSS code) ... */
