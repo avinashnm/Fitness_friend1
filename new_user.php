@@ -46,7 +46,7 @@ if (isset($_POST['submit-btn'])) {
                         VALUES ('$full_name', '$dob', '$gender', '$weight', '$height', '$activity_level', '$fitness_goal', '$username', '$email', '$hashed_password')";
 
                 if (mysqli_query($conn, $sql)) {
-                    echo "Registration successful!";
+                  header("Location: welcome.php");
                 } else {
                     echo "Error: " . $sql . "<br>" . mysqli_error($conn);
                 }

@@ -32,7 +32,7 @@
     Fit Gen is here to support you every step of the way.</p>
 </div>
 <div class="btn-section">
-  <button class="gs-btn">Get started</button>
+  <a href="new_home.html"><button class="gs-btn">Get started</button></a>
 </div>
 </div>
 </div>
