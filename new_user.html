@@ -39,8 +39,9 @@
     <div class="signup_fullsection">
     <div class="signup_section">
       <div class="step" id="step-1">
-        <form method="post" action="new_user.php" class="signup_form">
+        <form method="post" action="new_user.php" class="signup_form" onsubmit="return validateForm();">
           <div class="hdn_section">
+            <div class="error-message "></div>
           <h1 class="signup_hdn">SIGN UP</h1>
         </div>
         <div class="un_section">
@@ -131,7 +132,7 @@
           </div>
           <div class="btn_si">
           <div class="btn_section">
-            <button id="sub-btn" name="submit-btn" type="submit" class="signup-btn" >Submit</button><br><br>
+            <input type="submit" name="submit-btn" class="signup-btn" value="Submit">
           </div>
           <div class="su_section">
             <p> Have an account already?  </p>
@@ -181,5 +182,6 @@
   </button>
 </div>
 </div>
+<script src="new_user.js"></script>
 </body>
 </html>
