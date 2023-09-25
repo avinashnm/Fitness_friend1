@@ -1,6 +1,6 @@
 <?php
 
-    if (isset($_POST['submit-btn'])) {
+    if (isset($_POST['signin-btn'])) {
       session_start();
 
         $ServerName = "localhost";
@@ -9,7 +9,7 @@
         $Dbname = "fitness_friend";
 
     // Create a database connection
-    $conn = new mysqli($servername, $username, $password, $dbname);
+    $conn = new mysqli($ServerName, $db_Username, $db_Password, $Dbname);
 
     $input_username = $_POST["username"];
     $input_password = $_POST["password"];
@@ -17,7 +17,6 @@
     if ($conn->connect_error) {
         die("Connection failed: " . $conn->connect_error);
     }
-
     // SQL query to fetch the hashed password for the provided username
     $sql = "SELECT * FROM users WHERE username = ?";
     $stmt = $conn->prepare($sql);
