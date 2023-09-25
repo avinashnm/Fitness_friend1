@@ -1,47 +1,40 @@
 function validateForm() {
-    var full_name = document.getElementById("floatingUsername").value;
-    var dob = document.getElementById("floatingDOB").value;
-    var gender = document.getElementById("floatingSelectGender").value;
-    var weight = document.getElementById("floatingWeight").value;
-    var height = document.getElementById("floatingHeight").value;
-    var activity_level = document.getElementById("floatingSelectActivity").value;
-    var fitness_goal = document.getElementById("floatingSelectGoal").value;
-    var username = document.getElementById("floatingUsername2").value;
-    var email = document.getElementById("floatingMail").value;
-    var password = document.getElementById("floatingPw").value;
-    var confirm_password = document.getElementById("floatingCPw").value;
+    var fullName = document.getElementById("fullname").value;
+    var dob = document.getElementById("dob").value;
+    var gender = document.getElementById("gender").value;
+    var weight = document.getElementById("weight").value;
+    var height = document.getElementById("height").value;
+    var activityLevel = document.getElementById("activitylevel").value;
+    var fitnessGoal = document.getElementById("fitnessgoal").value;
+    var username = document.getElementById("username").value;
+    var email = document.getElementById("mail").value;
+    var password = document.getElementById("password").value;
+    var confirmPassword = document.getElementById("confirmpassword").value;
 
-    // Perform AJAX request to submit the form data to PHP for validation
-    $.ajax({
-        type: "POST",
-        url: "new_user.php", // Replace with the actual URL of your PHP script
-        data: {
-            full_name: full_name,
-            dob: dob,
-            gender: gender,
-            weight: weight,
-            height: height,
-            activity_level: activity_level,
-            fitness_goal: fitness_goal,
-            username: username,
-            email: email,
-            password: password,
-            confirm_password: confirm_password
-        },
-        success: function (response) {
-            // Parse the JSON response
-            var responseData = JSON.parse(response);
+    // Check if any of the fields are empty
+    if (
+      fullName === "" ||
+      dob === "" ||
+      gender === "Select your Gender" ||
+      weight === "" ||
+      height === "" ||
+      activityLevel === "Select your Activity Level" ||
+      fitnessGoal === "Choose your Fitness Goal" ||
+      username === "" ||
+      email === "" ||
+      password === "" ||
+      confirmPassword === ""
+    ) {
+      alert("All fields are required");
+      return false;
+    }
 
-            if (responseData.status === "success") {
-                // Registration was successful, you can redirect or display a success message
-                alert(responseData.message);
-                // Redirect to a success page or perform other actions
-                window.location.href = "success_page.php";
-            } else {
-                // Display the error message
-                alert(responseData.message);
-            }
-        }
-    });
+    // Check if password and confirm password match
+    if (password !== confirmPassword) {
+      alert("Password and Confirm Password do not match");
+      return false;
+    }
 
-    return false; //
+    // If all checks pass, the form will submit
+    return true;
+  }
