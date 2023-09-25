@@ -1,6 +1,6 @@
 .entire-bg
 {
-  background-color: Black;
+  background-image: url("homepagebg.webp");
   background-repeat: no-repeat;
   background-size: cover;
   font-family: "Oswald", sans-serif;
@@ -91,5 +91,7 @@
 .result
 {
   font-size: 20px;
+  font-weight: Bold;
+  color: white;
 
 }
