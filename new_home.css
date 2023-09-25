@@ -1,9 +1,14 @@
-.entire-bg{
+.entire-bg
+{
+  background-image: url("homepagebg.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
   background-color: Black;
 }
-.test
+.fitgen-logo
 {
-  font-size: 300px;
+  height: 20px;
+  width: 40px;
 }
 .canvas-btn
 {

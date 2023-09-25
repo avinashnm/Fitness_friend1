@@ -7,13 +7,43 @@
     <script src="Bootstrap/JS/bootstrap.min.js"></script>
 </head>
 <body class="entire-bg">
-<button class="btn canvas-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
-  <img class="hb-icon" src = "Hamburger_icon1.png"/>
-</button>
+  <nav class="navbar sticky-top navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <button class="btn canvas-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+        <img class="hb-icon" src = "Hamburger_icon1.png"/>
+      </button>
+      <img class="fitgen-logo" src="fitgen_logo.png">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <!---<ul class="nav nav-underline">
+
+  <li class="nav-item">
+    <a class="nav-link"  href="Home.php">Home</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link active" aria-current="page" href="new_user.html">Sign up</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="sign_in.html">Sign in</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" aria-disabled="true">About</a>
+  </li>
+</ul>  use this in the future if you want any navigations--->
+<a class="navbar-brand" href="#">
+  <img src="logo1.png" alt="FitGen Logo" width="50" height="44">
+</a>
+        </div>
+      </div>
+    </div>
+  </nav>
 <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
   <div class="offcanvas-header">
     <h5 class="offcanvas-title" id="offcanvasExampleLabel">Hi, User </h5>
-    <img src="wave.png"/>
+    <img src=""/>
     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
   </div>
   <div class="offcanvas-body">
@@ -22,15 +52,19 @@
       <li class="nav-item">
         <a class="nav-link active" aria-current="page" href="#">BMI Calculator</a>
       </li>
+      <hr>
       <li class="nav-item">
         <a class="nav-link" href="#">Link</a>
       </li>
+      <hr>
       <li class="nav-item">
         <a class="nav-link" href="#">Link</a>
       </li>
+      <hr>
       <li class="nav-item">
         <a class="nav-link disabled" aria-disabled="true">Disabled</a>
       </li>
+      <hr>
     </ul>
     </div>
   </div>

@@ -4,7 +4,11 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
-
+.fitgen-logo
+{
+  height: 30px;
+  width: 100px;
+}
 .canvas-btn
 {
   background-color: Black;
@@ -12,6 +16,6 @@
 }
 .hb-icon
 {
-  height: 50px;
-  width: 50px;
+  height: 30px;
+  width: 30px;
 }
