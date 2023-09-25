@@ -1,0 +1,35 @@
+.entire-bg
+{
+  background-image: url("homepagebg.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Oswald", sans-serif;
+}
+.fitgen-logo
+{
+  height: 30px;
+  width: 100px;
+}
+.canvas-btn
+{
+  background-color: Black;
+  border: 1px solid #ccc;
+}
+.hb-icon
+{
+  height: 30px;
+  width: 30px;
+}
+.greet
+{
+  font-size: 30px;
+}
+.link
+{
+  font-size: 15px;
+}
+.link:hover {
+    font-size: 18px;
+    background-color: #ccc;
+
+}
