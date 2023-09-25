@@ -63,13 +63,6 @@
   max-height: 100vh;
 background-color: Black;
 }
-<<<<<<< HEAD
-=======
-.signup_section{
-
-  max-height: 90vh;
-}
->>>>>>> two_page_sign_up
 .signup_form {
   overflow-y: scroll;
     width: 60vw;
