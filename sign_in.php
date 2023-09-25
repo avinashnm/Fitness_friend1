@@ -1,74 +1,51 @@
-new_user.html<!DOCTYPE html>
-<html>
-<head>
-    <link rel="stylesheet" type="text/css" href="sign_in2.css">
-    <link rel="stylesheet" href="Bootstrap/CSS/bootstrap.min.css">
-    <script src="Bootstrap/JS/bootstrap.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-</head>
-<body class="entire-bg">
-  <nav class="navbar sticky-top navbar-expand-lg bg-body-tertiary">
-    <div class="container-fluid">
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-        <div class="navbar-nav">
-          <ul class="nav nav-underline">
-  <li class="nav-item">
-    <a class="nav-link"  href="Home.php">Home</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="new_user.html">Sign up</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link active" aria-current="page" href="sign_in.php">Sign in</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" aria-disabled="true">About</a>
-  </li>
-</ul>
-        </div>
-      </div>
-    </div>
-  </nav>
-    <div class="signin_fullsection">
-    <div class="signin_section">
-      <div class="hdn_logo">
-        <form method="Post" class="signin_form" action="new_user.php">
-          <div class="logo_section">
-          <img src="logo1.png" alt="FitGen Logo" width="80" height="74">
-        </div>
-          <div class="hdn_section">
-          <h1 class="signin_hdn">Sign in to Fit Gen</h1>
-        </div>
-      </div>
-        <div class="un_section">
-          <div class="form-floating mb-3">
-            <input type="text" class="form-control border-0 border-bottom col-12 input" id="floatingUsername" placeholder="Enter your Username" style="width: 100%;">
-            <label for="floatingUsername label">Username</label>
-        </div>
-          </div>
-          <div class="pw_section">
-            <div class="form-floating mb-3">
-              <input type="password" class="form-control input" id="floatingPw" placeholder="Enter your Password">
-              <label for="floatingPw label">Password</label>
-          </div>
-          </div>
-          <div class="btn_si">
-          <div class="btn_section">
-            <button name="signin_btn" class="signin_btn">Sign In</button><br><br>
-            <div class="btn_section">
-              <button name="forgotpw_btn" class="forgotpw_btn">Forgot password?</button><br><br>
-          </div>
-          <div class="su_section">
-            <p> Don't have an account?  </p>
-            <a class="signup_link"  href="new_user.html"></t>Sign-up</a>
-          </div>
-        </div>
-          </div>
-        </form>
-    </div>
-  </div>
-</body>
-</html>
+<?php
+
+    if (isset($_POST['submit-btn'])) {
+      session_start();
+
+        $ServerName = "localhost";
+        $db_Username = "root";
+        $db_Password = "";
+        $Dbname = "fitness_friend";
+
+    // Create a database connection
+    $conn = new mysqli($servername, $username, $password, $dbname);
+
+    $input_username = $_POST["username"];
+    $input_password = $_POST["password"];
+    // Check the connection
+    if ($conn->connect_error) {
+        die("Connection failed: " . $conn->connect_error);
+    }
+
+    // SQL query to fetch the hashed password for the provided username
+    $sql = "SELECT * FROM users WHERE username = ?";
+    $stmt = $conn->prepare($sql);
+    $stmt->bind_param("s", $input_username);
+    $stmt->execute();
+    $result = $stmt->get_result();
+
+    if ($result->num_rows === 1) {
+        // Username exists, now check the password
+        $row = $result->fetch_assoc();
+        $hashed_password = $row["password"];
+
+        if (password_verify($input_password, $hashed_password)) {
+            // Password matches, user is authenticated
+            $_SESSION["username"] = $input_username; // Store username in session
+            header("Location: dashboard.php"); // Redirect to the dashboard or another authenticated page
+        } else {
+            // Password is incorrect
+            echo "Incorrect password. Please try again.";
+        }
+    } else {
+        // Username not found
+        echo "Username not found. Please check your username or sign up.";
+    }
+
+    // Close the database connection
+    $stmt->close();
+    $conn->close();
+}
+
+?>

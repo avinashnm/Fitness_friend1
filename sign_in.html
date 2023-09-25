@@ -22,7 +22,7 @@
     <a class="nav-link" href="new_user.html">Sign up</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link active" aria-current="page" href="sign_in.php">Sign in</a>
+    <a class="nav-link active" aria-current="page" href="sign_in.html">Sign in</a>
   </li>
   <li class="nav-item">
     <a class="nav-link" aria-disabled="true">About</a>
@@ -35,7 +35,7 @@
     <div class="signin_fullsection">
     <div class="signin_section">
       <div class="hdn_logo">
-        <form method="Post" class="signin_form" action="new_user.html">
+        <form method="Post" class="signin_form" action="sign_in.php" onsubmit="return validateForm();">
           <div class="logo_section">
           <img src="logo1.png" alt="FitGen Logo" width="80" height="74">
         </div>
@@ -70,5 +70,6 @@
         </form>
     </div>
   </div>
+  <script src="sign_in.js"></script>
 </body>
 </html>
