@@ -74,7 +74,7 @@
   <h1>BMI CALCULATOR</h1>
   </div>
   <div class="BMI-calc">
-  <form method="post" action="BMI.php" onsubmit="return validateWeightHeightForm();">
+  <form method="post" onsubmit="return false;">
     <div class="weight-section">
     <div class="form-floating mb-3">
   <input type="text" class="form-control" id="weight" placeholder="Enter your Weight">
@@ -88,8 +88,11 @@
 </div>
 </div>
 <div class="btn_section">
-  <input type="submit" name="calc-btn" class="calc-btn" value="Calculate">
+  <input type="button" class="calc-btn" value="Calculate BMI" onclick="validateWeightHeightForm()">
 </div>
+<hr>
+<center><div id="bmiResult" class="result"></div></center>
+
     </form>
     </div>
     </div>

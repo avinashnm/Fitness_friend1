@@ -1,6 +1,6 @@
 .entire-bg
 {
-  background-image: url("homepagebg.webp");
+  background-color: Black;
   background-repeat: no-repeat;
   background-size: cover;
   font-family: "Oswald", sans-serif;
@@ -87,4 +87,9 @@
 }
 .calc-btn:hover {
   background-color: Grey;
+}
+.result
+{
+  font-size: 20px;
+
 }
