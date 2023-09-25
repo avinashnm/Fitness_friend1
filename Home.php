@@ -21,7 +21,7 @@
     <a class="nav-link" href="new_user.html">Sign up</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="sign_in.php">Sign in</a>
+    <a class="nav-link" href="sign_in.html">Sign in</a>
   </li>
   <li class="nav-item">
     <a class="nav-link" aria-disabled="true">About</a>
@@ -54,7 +54,7 @@
 </br></br>
 <div class="si_section">
 <p class="si-capt">Already have an account?</p>
-<a href="sign_in.php"><button class="si_btn">Sign in</button></a>
+<a href="sign_in.html"><button class="si_btn">Sign in</button></a>
 </div>
 </div>
 </div>
