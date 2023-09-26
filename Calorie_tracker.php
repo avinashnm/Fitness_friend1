@@ -55,7 +55,7 @@
       </li>
       <hr>
       <li class="nav-item link">
-        <a class="nav-link Calorie_tracker" href="Calorie_tracker.html">Calorie Tracker</a>
+        <a class="nav-link Calorie_tracker" href="Calorie_tracker.php">Calorie Tracker</a>
       </li>
       <hr>
       <!---<li class="nav-item">
