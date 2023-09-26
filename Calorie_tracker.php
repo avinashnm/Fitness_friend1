@@ -70,11 +70,13 @@
   </div>
 </div>
 <div class="Ct-section">
+  <div class="hdn_form">
   <div class="hdn-section">
     <h1 class="hdn">Calorie Tracker</h1>
   </div>
   <div class="ct-form">
-    <form method="post" action="calorie_tracker.php">
+    <form method="post" class="ct-form-section">
+      <div class="dd-section">
         <label for="food">Select a Food:</label>
         <select name="food" id="food">
             <option value="">Select a Food</option>
@@ -107,9 +109,14 @@
                 $conn->close();
             ?>
         </select>
-        <input type="submit" name="track" value="Track">
+      </div>
+      <div class="btn-section">
+        <input type="submit" name="track" value="Track" class="track-btn">
+      </div>
     </form>
-
+  </div>
+</div>
+<div class="result-section">
     <?php
     if (isset($_POST['track'])) {
         $selectedFood = $_POST['food'];
@@ -131,10 +138,9 @@
         // Fetch nutritional information for the selected food
         $sql = "SELECT * FROM IndianFoods WHERE food_name = '$selectedFood'";
         $result = $conn->query($sql);
-
         if ($result->num_rows > 0) {
             $row = $result->fetch_assoc();
-            echo "<h2>Nutritional Information for $selectedFood:</h2>";
+            echo "<h4>Nutritional Information for $selectedFood:</h4>";
             echo "<p>Calories: " . $row['calories'] . " kcal</p>";
             echo "<p>Carbohydrates: " . $row['carbohydrates'] . " g</p>";
             echo "<p>Protein: " . $row['protein'] . " g</p>";
@@ -147,6 +153,7 @@
         $conn->close();
     }
     ?>
+  </div>
   </div>
 </body>
 </html>

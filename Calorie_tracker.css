@@ -1,6 +1,6 @@
 .entire-bg
 {
-  background-image: url("homepagebg.webp");
+  background-image: url("ctpage_bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   font-family: "Oswald", sans-serif;
@@ -42,13 +42,11 @@
 }
 .hdn
 {
-  position: absolute;
+margin-bottom: 20px;
   padding: 10px 20px;
   margin-top: 100px;
-  margin-left: 60px;
+  margin-left: 10px;
   font-weight: bold;
-  color: Black;
-  background-color: rgba(0, 255, 0, 0.5);
 }
 .BMI-section
 {
@@ -94,4 +92,62 @@
   font-weight: Bold;
   color: white;
 
+}
+.Ct-section{
+  color: White;
+  margin-left: 500px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+.hdn_form
+{
+  display: flex;
+
+}
+.dd-section
+{
+  font-size: 25px;
+}
+.ct-form-section
+{
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  padding: 30px;
+}
+.track-btn {
+  font-weight: bold;
+  font-size: 15px;
+  padding: 5px 50px;
+  background-color: Black;
+  color: White;
+  border: 1px solid rgb(189 ,225 ,255);
+  border-radius: 30px;
+  cursor: pointer;
+}
+.track-btn:hover {
+  background-color: Grey;
+}
+.btn-section
+{
+margin-top: 20px;
+}
+.result-section{
+margin-top: 20px;
+display: flex;
+flex-direction: column;
+
+}
+.result-section
+{
+  display : flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-weight: bolder;
 }
