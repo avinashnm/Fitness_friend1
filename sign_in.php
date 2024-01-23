@@ -32,7 +32,7 @@
         if (password_verify($input_password, $hashed_password)) {
             // Password matches, user is authenticated
             $_SESSION["username"] = $input_username; // Store username in session
-            header("Location: dashboard.php"); // Redirect to the dashboard or another authenticated page
+            header("Location: new_home.html"); // Redirect to the dashboard or another authenticated page
         } else {
             // Password is incorrect
             echo "Incorrect password. Please try again.";
